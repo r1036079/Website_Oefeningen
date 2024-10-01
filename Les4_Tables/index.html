@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    table {
+        margin: 20px 0;
+    }   
+    table.border{
+        margin: 1em;
+        /* 1em means "equal" to the current font size */
+        border: solid 2px #03d10e;
+        border-collapse: collaps;
+        /* seperate */
+    }
+    table.border td{
+        border: solid 2px #03d1e0;
+        padding: 25px;
+    }
+    table.border th{
+        border: solid 2px #c03d1e;
+        padding: 5px;
+        background-color: #f4c4ba;
+    }
+   </style>
+</head>
+<body>
+    <table class="border">
+        <tr>
+            <th>Cel 1</th>
+            <th colspan="2">Samengevoegd</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Samengevoegd</th>
+            <td>Cel 5</td>
+            <td>Cel 6</td>
+        </tr>
+        <tr>
+            <td>Cel 8</td>
+            <td>Cel 9</td>
+        </tr>
+    </table>
+    <table class="border">
+        <tr>
+            <td>Cel 1</td>
+            <td>Cel 2</td>
+            <td>Cel 3</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td rowspan="2" colspan="2">Cel 4</td>
+        </tr>
+        <tr>
+            <td>Cel6</td>
+        </tr>
+    </table>
+    <table class="border">
+        <tr>
+            <td>voornaam</td>
+            <td>arthur</td>
+        </tr>
+        <tr>
+            <td>familienaam</td>
+            <td>peeters</td>
+        </tr>
+        <tr>
+            <td>talenkennis</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>nederland</td>
+                        <td>frans</td>
+                        <td>engels</td>
+                    </tr>
+                    <tr>
+                        <td>moedertaal</td>
+                        <td>goed</td>
+                        <td>zeer goed</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
